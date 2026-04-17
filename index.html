@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Zusiphe Sidimba — Software Engineer</title>
+    <link rel="icon" type="image/png" href="Icon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <!-- Lucide icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ===== NAV ===== -->
+    <nav id="navbar">
+      <a class="nav-logo" href="#">
+        <div class="nav-logo-icon">&lt;/&gt;</div>
+        Zusiphe Sidimba
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certs</a>
+        <a href="#contact">Contact</a>
+        <a href="cv.pdf" target="_blank">
+          <button class="nav-hire">View CV</button>
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- ===== PORTFOLIO MASTHEAD ===== -->
+    <div class="masthead">
+      <div class="masthead-top">
+        <span class="masthead-tag">Software Engineer</span>
+      </div>
+      <span class="masthead-word">PORTFOLIO</span>
+      <div class="masthead-sub">Zusiphe Sidimba</div>
+      <div class="masthead-bottom">
+        <span class="masthead-label">Full-Stack Engineer</span>
+        <span class="masthead-label">Cape Town, SA — 2026</span>
+      </div>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="hero-bg-text">ENGINEER</div>
+      <div class="hero-noise"></div>
+      <div class="hero-left">
+        <div class="hero-tag">
+          <div class="hero-tag-dot"></div>
+          Available · Cape Town, SA
+        </div>
+        <div class="hero-name">Zusiphe<br><span>Sidimba.</span></div>
+        <div class="hero-title">Software Development Engineer</div>
+        <p class="hero-bio">Versatile IT professional with a strong foundation in software development, data science, cybersecurity, and cloud computing. I build practical, efficient solutions and continuously grow with emerging technologies.</p>
+        <div class="hero-numbers">
+          <div>
+            <div class="hn-val">1</div>
+            <div class="hn-lbl">Year Experience</div>
+          </div>
+          <div>
+            <div class="hn-val">5+</div>
+            <div class="hn-lbl">Projects Built</div>
+          </div>
+          <div>
+            <div class="hn-val">9</div>
+            <div class="hn-lbl">Certifications</div>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <button class="btn-red" id="heroContactBtn">Contact me <span>→</span></button>
+          <button class="btn-outline" id="heroProjectsBtn">View work</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-img-frame hero-icon-card">
+          <div class="hero-icon-shell">
+            <div class="hero-icon-glow"></div>
+            <img class="hero-icon-mark" src="Icon.png" alt="Zusiphe Sidimba icon" />
+          </div>
+
+          <div class="hero-img-label">
+            Software Engineer · Cape Town
+          </div>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/ZUSIPHE74" target="_blank" rel="noopener" class="soc-btn" title="GitHub" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.21.68-.48v-1.68c-2.78.61-3.37-1.19-3.37-1.19-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.61.07-.61 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.91.82.09-.64.35-1.08.64-1.33-2.22-.26-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.8c.85 0 1.7.11 2.5.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.41.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.69-4.58 4.94.36.31.69.92.69 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zusiphe-sidimba-62008b2a2" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 10.34H5.67V18H8.34V10.34ZM7 6A1.56 1.56 0 0 0 5.44 7.56C5.44 8.42 6.13 9.1 7 9.1C7.84 9.1 8.56 8.42 8.56 7.56C8.56 6.72 7.84 6 7 6ZM18 13.26C18 10.94 16.76 9.86 15.11 9.86C13.78 9.86 13.19 10.59 12.86 11.11V10.34H10.19C10.23 10.85 10.19 18 10.19 18H12.86V13.72C12.86 13.49 12.88 13.27 12.95 13.11C13.13 12.66 13.53 12.19 14.22 12.19C15.13 12.19 15.5 12.88 15.5 13.89V18H18V13.26Z"/>
+            </svg>
+          </a>
+          <a href="mailto:sidimbazusiphe@gmail.com" class="soc-btn" title="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="reveal-left">
+          <div class="about-img-frame">
+            <div class="about-img-inner">PHOTO</div>
+            <div class="about-img-accent">PORTFOLIO</div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="sec-eyebrow">Who I am</div>
+          <h2 class="sec-heading">About<br>Me.</h2>
+          <p class="about-bio">I am a versatile and growth-driven IT professional with a strong ability to learn quickly, think critically, and adapt across multiple areas of technology. My journey has been intentionally broad, giving me a solid foundation in software development, data science, cybersecurity, cloud computing, and digital technologies, allowing me to approach problems from different perspectives and deliver well-rounded solutions.</p>
+          <p class="about-bio">What sets me apart is not just my technical exposure, but my approach to problem-solving. I focus on understanding the "why," breaking down complex challenges, and building practical, efficient solutions. I am comfortable working with technologies such as Python, JavaScript, web development tools, databases, and modern development practices, and I continuously improve my skills by staying up to date with emerging trends like AI and cloud computing. I bring curiosity, discipline, and a strong problem-solving mindset into every environment, and whether working independently or in a team, I aim to add value, improve processes, and grow into a highly skilled and reliable IT professional ready to contribute across a range of roles.</p>
+          <div class="about-cards stagger-children">
+            <div class="ab-card"><div class="ab-val">1</div><div class="ab-lbl">Year exp.</div></div>
+            <div class="ab-card"><div class="ab-val">F/S</div><div class="ab-lbl">Full-Stack</div></div>
+            <div class="ab-card"><div class="ab-val">9</div><div class="ab-lbl">Certs earned</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+      <div class="sec-eyebrow reveal">What I use</div>
+      <h2 class="sec-heading reveal">Skills &amp;<br>Expertise.</h2>
+      <p class="sec-sub reveal">A toolkit built for modern, scalable applications across every layer of the stack.</p>
+      <div class="skills-grid stagger-children">
+        <div class="sk-card">
+          <div class="sk-num">01</div>
+          <div class="sk-title">Frontend</div>
+          <ul class="sk-list">
+            <li>HTML &amp; CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>WordPress</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div class="sk-card">
+          <div class="sk-num">02</div>
+          <div class="sk-title">Backend</div>
+          <ul class="sk-list">
+            <li>Python &amp; Django</li>
+            <li>PHP</li>
+            <li>MySQL &amp; Oracle</li>
+            <li>OOP</li>
+            <li>Data Structures</li>
+          </ul>
+        </div>
+        <div class="sk-card">
+          <div class="sk-num">03</div>
+          <div class="sk-title">Tools</div>
+          <ul class="sk-list">
+            <li>Git &amp; GitHub</li>
+            <li>Shell Scripting</li>
+            <li>Unit Testing</li>
+            <li>Debugging</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="sk-card">
+          <div class="sk-num">04</div>
+          <div class="sk-title">Design</div>
+          <ul class="sk-list">
+            <li>Software Design</li>
+            <li>System Architecture</li>
+            <li>Network Fundamentals</li>
+            <li>Figma</li>
+            <li>WordPress</li>
+          </ul>
+        </div>
+        <div class="sk-card">
+          <div class="sk-num">05</div>
+          <div class="sk-title">Cloud / DevOps</div>
+          <ul class="sk-list">
+            <li>Azure</li>
+            <li>Docker</li>
+            <li>AWS (Practitioner)</li>
+            <li>Linux</li>
+            <li>CI/CD Basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <div class="proj-header">
+        <div>
+          <div class="sec-eyebrow reveal">What I've built</div>
+          <h2 class="sec-heading reveal">Featured<br>Projects.</h2>
+        </div>
+        <div class="proj-count reveal">05</div>
+      </div>
+      <div class="proj-grid stagger-children">
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner pt1">E-COM</div>
+            <div class="proj-feat">Featured</div>
+            <div class="proj-overlay">
+              <a href="https://zusiphe74.github.io/-fitness-class-scheduler-lite/" target="_blank" rel="noopener" class="proj-ov-btn">↗</a>
+              <a href="https://github.com/ZUSIPHE74/-fitness-class-scheduler-lite.git" target="_blank" rel="noopener" class="proj-ov-btn">GH</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-metric">8k active users · 94 Lighthouse</div>
+            <div class="proj-title">E-Commerce Platform</div>
+            <div class="proj-desc">Full-stack store with inventory, payments, and analytics dashboard.</div>
+            <div class="tag-row"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Stripe</span></div>
+            <div class="proj-links"><a href="https://zusiphe74.github.io/-fitness-class-scheduler-lite/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/ZUSIPHE74/-fitness-class-scheduler-lite.git" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner pt3">DATA</div>
+            <div class="proj-overlay">
+              <a href="https://zusiphe74.github.io/-food-fest-ticket-landing-page/" target="_blank" rel="noopener" class="proj-ov-btn">↗</a>
+              <a href="https://github.com/ZUSIPHE74/-food-fest-ticket-landing-page.git" target="_blank" rel="noopener" class="proj-ov-btn">GH</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-metric">60% faster than prev. tool</div>
+            <div class="proj-title">Analytics Dashboard</div>
+            <div class="proj-desc">Real-time data platform with D3.js visualisations and export.</div>
+            <div class="tag-row"><span class="tag">Vue.js</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">D3.js</span></div>
+            <div class="proj-links"><a href="https://zusiphe74.github.io/-food-fest-ticket-landing-page/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/ZUSIPHE74/-food-fest-ticket-landing-page.git" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner pt1">BUILD</div>
+            <div class="proj-overlay">
+              <a href="https://zusiphe74.github.io/-property-mini-listings/" target="_blank" rel="noopener" class="proj-ov-btn">↗</a>
+              <a href="https://github.com/ZUSIPHE74/-property-mini-listings.git" target="_blank" rel="noopener" class="proj-ov-btn">GH</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-metric">1,200 sites created</div>
+            <div class="proj-title">Portfolio Builder</div>
+            <div class="proj-desc">Drag-and-drop website builder with template marketplace.</div>
+            <div class="tag-row"><span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Supabase</span></div>
+            <div class="proj-links"><a href="https://zusiphe74.github.io/-property-mini-listings/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/ZUSIPHE74/-property-mini-listings.git" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner pt2">PM</div>
+            <div class="proj-overlay">
+              <a href="https://zusiphe74.github.io/News-System/" target="_blank" rel="noopener" class="proj-ov-btn">↗</a>
+              <a href="https://github.com/ZUSIPHE74/News-System.git" target="_blank" rel="noopener" class="proj-ov-btn">GH</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-metric">Teams of 50+ using daily</div>
+            <div class="proj-title">Project Management Tool</div>
+            <div class="proj-desc">Collaborative task tracker with real-time updates via WebSockets.</div>
+            <div class="tag-row"><span class="tag">React</span><span class="tag">GraphQL</span><span class="tag">AWS</span><span class="tag">Socket.io</span></div>
+            <div class="proj-links"><a href="https://zusiphe74.github.io/News-System/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/ZUSIPHE74/News-System.git" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner pt3">CLOUD</div>
+            <div class="proj-overlay">
+              <a href="https://ninalewis-coder.github.io/ModernTech_group17_part2/" target="_blank" rel="noopener" class="proj-ov-btn">↗</a>
+              <a href="https://github.com/ninalewis-coder/ModernTech_group17_part2.git" target="_blank" rel="noopener" class="proj-ov-btn">GH</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-metric">99.9% uptime · 2TB stored</div>
+            <div class="proj-title">Cloud Storage Platform</div>
+            <div class="proj-desc">Encrypted file storage with sharing, versioning, and audit logs.</div>
+            <div class="tag-row"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Azure</span><span class="tag">Redis</span></div>
+            <div class="proj-links"><a href="https://ninalewis-coder.github.io/ModernTech_group17_part2/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/ninalewis-coder/ModernTech_group17_part2.git" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certs">
+      <div class="sec-eyebrow reveal">Credentials</div>
+      <h2 class="sec-heading reveal">Certifications.</h2>
+      <p class="sec-sub reveal">
+        Industry-recognised credentials validating real-world technical expertise.
+      </p>
+
+      <div class="cert-grid stagger-children">
+
+        <!-- ================= CLOUD & INFRASTRUCTURE ================= -->
+        <div class="cert-group">
+          <div class="cg-header">
+            <div class="cg-icon"><i data-lucide="award"></i></div>
+            <div class="cg-title">Cloud & Infrastructure (AWS, IBM, Azure Core)</div>
+          </div>
+
+          <a class="cert-item" href="https://www.credly.com/badges/b9eebaa4-76f7-43b2-a608-4b0a8f293c35/linked_in_profile" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Introduction to Cybersecurity</div>
+              <div class="ci-sub">Credly / IBM</div>
+            </div>
+            <div class="ci-year">2025</div>
+          </a>
+
+          <a class="cert-item" href="https://courses.cognitiveclass.ai/certificates/28e48fba90224ee98c8a564044f5f886" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Introduction to Cloud</div>
+              <div class="ci-sub">IBM / Cognitive Class</div>
+            </div>
+            <div class="ci-year">2025</div>
+          </a>
+
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/records/5DC9930SZ0D2" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Microsoft Azure Machine Learning</div>
+              <div class="ci-sub">Microsoft / Coursera</div>
+            </div>
+            <div class="ci-year">2026</div>
+          </a>
+
+        </div>
+
+        <!-- ================= CYBERSECURITY & AI ================= -->
+        <div class="cert-group">
+          <div class="cg-header">
+            <div class="cg-icon"><i data-lucide="shield-check"></i></div>
+            <div class="cg-title">Cybersecurity & AI (Google + Azure AI Track)</div>
+          </div>
+
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/records/HBBQGIIXHEXW" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Foundations of Cybersecurity</div>
+              <div class="ci-sub">Google / Coursera</div>
+            </div>
+            <div class="ci-year">2026</div>
+          </a>
+
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/records/NO4HFUU39SCK" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Artificial Intelligence on Microsoft Azure</div>
+              <div class="ci-sub">Microsoft / Coursera</div>
+            </div>
+            <div class="ci-year">2026</div>
+          </a>
+
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/records/9EVOVX8U9PVL" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Computer Vision in Microsoft Azure</div>
+              <div class="ci-sub">Microsoft / Coursera</div>
+            </div>
+            <div class="ci-year">2026</div>
+          </a>
+
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/records/RARGJSDRONQF" target="_blank" rel="noopener">
+            <div class="ci-check"><i data-lucide="check"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Natural Language Processing in Microsoft Azure</div>
+              <div class="ci-sub">Microsoft / Coursera</div>
+            </div>
+            <div class="ci-year">2026</div>
+          </a>
+
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/specialization/C1ZPEM9WGKQK" target="_blank" rel="noopener">
+            <div class="ci-check ci-check-star"><i data-lucide="star"></i></div>
+            <div style="flex:1">
+              <div class="ci-name">Microsoft Azure AI Fundamentals (AI-900)</div>
+              <div class="ci-sub">Microsoft / Coursera — Specialization</div>
+            </div>
+            <div class="ci-year">2026</div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="sec-eyebrow reveal">Let's talk</div>
+      <h2 class="sec-heading reveal">Get In<br>Touch.</h2>
+      <p class="sec-sub reveal">Available for full-time roles and select contracts. Based in Cape Town — open to remote.</p>
+      <div class="contact-grid">
+        <div class="form-card reveal-left">
+          <form action="https://formspree.io/f/mvzdappo" method="POST">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" placeholder="Your name" required/>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="your.email@example.com" required/>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input id="subject" type="text" name="subject" placeholder="How can I help you?"/>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send message <span>→</span></button>
+          </form>
+        </div>
+        <div class="info-stack reveal-right">
+          <div>
+            <div class="info-block-title">Contact Info</div>
+            <a class="info-item" href="mailto:sidimbazusiphe@gmail.com">
+              <div class="info-icon"><i data-lucide="mail"></i></div>
+              <div><div class="info-lbl">Email</div><div class="info-val">sidimbazusiphe@gmail.com</div></div>
+            </a>
+            <div class="info-item">
+              <div class="info-icon"><i data-lucide="map-pin"></i></div>
+              <div><div class="info-lbl">Location</div><div class="info-val">Cape Town, South Africa</div></div>
+            </div>
+          </div>
+          <div>
+            <div class="info-block-title">Connect</div>
+            <div class="soc-big-row">
+              <a href="https://github.com/ZUSIPHE74" target="_blank" rel="noopener" class="soc-big" title="GitHub" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.21.68-.48v-1.68c-2.78.61-3.37-1.19-3.37-1.19-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.61.07-.61 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.91.82.09-.64.35-1.08.64-1.33-2.22-.26-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.8c.85 0 1.7.11 2.5.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.41.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.69-4.58 4.94.36.31.69.92.69 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/zusiphe-sidimba-62008b2a2" target="_blank" rel="noopener" class="soc-big" title="LinkedIn" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 10.34H5.67V18H8.34V10.34ZM7 6A1.56 1.56 0 0 0 5.44 7.56C5.44 8.42 6.13 9.1 7 9.1C7.84 9.1 8.56 8.42 8.56 7.56C8.56 6.72 7.84 6 7 6ZM18 13.26C18 10.94 16.76 9.86 15.11 9.86C13.78 9.86 13.19 10.59 12.86 11.11V10.34H10.19C10.23 10.85 10.19 18 10.19 18H12.86V13.72C12.86 13.49 12.88 13.27 12.95 13.11C13.13 12.66 13.53 12.19 14.22 12.19C15.13 12.19 15.5 12.88 15.5 13.89V18H18V13.26Z"/>
+                </svg>
+              </a>
+              <a href="mailto:sidimbazusiphe@gmail.com" class="soc-big" title="Email">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+            <div class="avail-box">Open to full-time roles and select contracts. Typically responds within 24 hours.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2026 Zusiphe Sidimba. All rights reserved.</p>
+      <div class="footer-mark">ZS · DEV</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
