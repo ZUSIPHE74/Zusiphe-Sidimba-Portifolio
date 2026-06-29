@@ -715,6 +715,8 @@ section { padding: 96px var(--gutter); border-bottom: 1px solid var(--border); }
 .cert-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); transition: padding-left .2s; text-decoration: none; cursor: none; }
 .cert-item:last-child { border-bottom: none; }
 .cert-item:hover { padding-left: 6px; }
+.cert-item.placeholder { cursor: default; }
+.cert-item.placeholder:hover { padding-left: 0; }
 .ci-check { width: 30px; height: 30px; border: 1px solid var(--red); display: flex; align-items: center; justify-content: center; color: var(--red); flex-shrink: 0; }
 .ci-check-star { border-color: gold; color: gold; }
 .ci-name { font-size: 14px; color: var(--white); flex: 1; }
