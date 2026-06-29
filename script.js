@@ -61,22 +61,7 @@ document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger-childr
 
 /* ---- HAMBURGER MENU (mobile) ---- */
 document.getElementById('hamburger').addEventListener('click', () => {
-  const links = document.getElementById('navLinks');
-  if (links.style.display === 'flex') {
-    links.style.display = 'none';
-  } else {
-    links.style.cssText = `
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 55px; left: 0; right: 0;
-      background: #0a0a0a;
-      padding: 24px 32px;
-      gap: 20px;
-      border-bottom: 1px solid rgba(245,242,238,.1);
-      z-index: 200;
-    `;
-  }
+  document.getElementById('navLinks').classList.toggle('active');
 });
 
 /* ---- TYPING EFFECT (hero title) ---- */
@@ -147,5 +132,16 @@ document.querySelectorAll('.btn-red, .btn-outline, .nav-hire').forEach(btn => {
   });
   btn.addEventListener('mouseleave', () => {
     btn.style.transform = '';
+  });
+});
+
+/* ---- PROJECT CARDS CLICKABLE ---- */
+document.querySelectorAll('.proj-card').forEach(card => {
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('a')) return;
+    const demoLink = card.querySelector('.proj-links a') || card.querySelector('.proj-overlay a');
+    if (demoLink) {
+      window.open(demoLink.href, '_blank');
+    }
   });
 });
